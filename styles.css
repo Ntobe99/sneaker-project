@@ -1,0 +1,255 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(banner.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #464646;
+}
+.icon {
+  display: inline;
+  float: inline-end;
+}
+.home-heading {
+  font-size: 70px;
+}
+.home-details {
+}
+.first-page {
+  display: flex;
+}
+.text {
+  margin-top: 200px;
+  margin-left: 100px;
+  text-align: center;
+}
+.btn {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: black;
+  text-decoration: none;
+  width: 170px;
+  text-emphasis-color: black;
+  margin-top: 20px;
+  color: black;
+  font-size: medium;
+}
+.btn:after {
+  background-color: #f79fa2;
+}
+.btn:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+
+.air {
+  color: #ed2d34;
+  font-size: 70px;
+}
+.navbar-brand {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+}
+.social-links {
+  display: inline-block;
+  float: right;
+  padding: 15px;
+}
+.social-links a {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.social-links a .fab {
+  font-size: 20px;
+  line-height: 50px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+}
+
+.social-links a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: #000;
+  background-color: #ed2d34;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.social-links a:hover::after {
+  top: 0;
+}
+
+.social-links a:hover .fab {
+  color: #ed2d34;
+}
+
+.social-links a:hover {
+  transform: translateY(-10px);
+}
+.page-header-container {
+  margin-top: 300px;
+  margin-left: 300px;
+  font-size: 50px;
+}
+.page-subtitle {
+  color: #ed2d34;
+}
+button {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  border-color: black;
+  text-decoration: none;
+  width: 170px;
+  text-emphasis-color: black;
+  margin-top: 20px;
+  color: black;
+  font-size: medium;
+}
+button:after {
+  background-color: #ed2d34;
+}
+button:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+.content {
+  display: flex;
+}
+form {
+  margin-top: 200px;
+  display: inline-block;
+  align-items: row;
+
+  padding: 10px;
+  border: #000;
+}
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.location {
+  margin-left: 20px;
+  display: inline;
+}
